@@ -1,0 +1,8 @@
+.nav-list a {
+    text-decoration: none;
+}
+Navbar {
+    background-image: url(../assests/image.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+}
