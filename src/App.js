@@ -7,7 +7,7 @@ import FreeExamList from './components/Pages/Exam/FreeExamList';
 import Questions from './components/Pages/StartExam/Questions';
 import { useState } from 'react';
 import FinishExam from './components/Pages/FinishExam/FinishExam';
-import PageNotFound from './components/Pages/PageNotFound/PageNotFound';
+// import PageNotFound from './components/Pages/PageNotFound/PageNotFound';
 
 
 
@@ -35,7 +35,7 @@ function App() {
       <Route path="/ExamPage"element={<FreeExamList id={id} tokenu={tokenu} server_key={serverKey} />}/>
       <Route path="/Questions/:examId" element={<Questions id={id} tokenu={tokenu} server_key={serverKey} />}/>
       <Route path="/FinishExam" element={<FinishExam />}/>
-      <Route path="*" element={<PageNotFound/>} />
+      {/* <Route path="*" element={<PageNotFound/>} /> */}
       
     
 
