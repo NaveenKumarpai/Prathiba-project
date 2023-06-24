@@ -7,3 +7,6 @@ Navbar {
     background-repeat: no-repeat;
     border: none;
 }
+@media only screen and (max-width: 767px) {
+   
+}

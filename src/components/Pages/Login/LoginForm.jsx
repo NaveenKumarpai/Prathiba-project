@@ -43,6 +43,7 @@ const LoginForm = ( { setId, setTokenu}) => {
   };
 
   return (
+    <div>
     <form onSubmit={handleFormSubmit} className='text'>
       <Header/>
       <h3>LOGIN</h3>
@@ -71,6 +72,7 @@ const LoginForm = ( { setId, setTokenu}) => {
       <h5>TOKEN:{token}</h5> */}
       
     </form>
+    </div>
   );
 };
 

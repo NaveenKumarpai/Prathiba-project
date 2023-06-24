@@ -3,6 +3,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import "./Register.css";
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Header from "../../Header/Header"
 
 const RegistrationForm = () => {
@@ -29,7 +30,7 @@ const RegistrationForm = () => {
     try {
       const response = await axios.post('https://test.e-prathibha.com/apis/register', formData);
       const data = response.data;
-      // console.log(data); 
+      console.log(data); 
       
       if(data.status ===200){
         navigate('/verifyEmail', {state: {msg: data.data}});
@@ -49,8 +50,9 @@ const RegistrationForm = () => {
       console.error(error);
     }
   };
-  //  { state: { email, name, phone } };
+ 
   return (
+    <div>
     <form onSubmit={handleSubmit} className='register'>
       <Header/>
       <h3>Registration</h3>
@@ -105,9 +107,10 @@ const RegistrationForm = () => {
       />
       <br/> 
       <button type="submit">Register</button>
+      <Link to="/"><span>Login</span></Link>
       <h6>{msg}</h6>
     </form>
-    
+    </div>
   );
 };
 

@@ -5,3 +5,8 @@
   margin-bottom: 10px;
   width: 30%;
 }
+@media (max-width: 767px) {
+  .margin {
+    width: 70%;
+  }
+  }

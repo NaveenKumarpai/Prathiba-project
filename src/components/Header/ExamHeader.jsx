@@ -17,7 +17,7 @@ function Header() {
   return (
    
         <Navbar>
-            <Container>
+            <Container className='size'>
                 <Navbar.Brand><img src={ Logo } alt="Logo"  width={"100px"} height={"100px"}/></Navbar.Brand>
                 <Nav className='nav-list'> 
                         <div className='equal'>

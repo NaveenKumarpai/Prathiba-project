@@ -42,7 +42,8 @@ function VerifyEmailForm() {
   };
 
   return (
-    <div>
+    <div className='text-center'>
+      <h4>VerifyEmail</h4>
       <form onSubmit={handleSubmit}>
         <label>Registration Code:</label>
         <input
