@@ -3,8 +3,6 @@ import { useEffect } from 'react';
 import axios from 'axios';
 import { Link, useLocation } from 'react-router-dom';
 
-
-
 const PaymentResponse = () => {
   const [packageOrder,setPackageOrder] = useState('');
   const location = useLocation();
