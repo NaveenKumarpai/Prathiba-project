@@ -30,12 +30,14 @@ const RegistrationForm = () => {
       const response = await axios.post('https://test.e-prathibha.com/apis/register', formData);
       const data = response.data;
       // console.log(data); 
-
+      
       if(data.status ===200){
         navigate('/verifyEmail', {state: {msg: data.data}});
+        
       }else{
         setMsg(data.data);
       }
+      
 
       setEmail('');
       setName('');
@@ -47,7 +49,7 @@ const RegistrationForm = () => {
       console.error(error);
     }
   };
-
+  //  { state: { email, name, phone } };
   return (
     <form onSubmit={handleSubmit} className='register'>
       <Header/>

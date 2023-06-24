@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import ExamHeader from "../../Header/ExamHeader";
+import { Link } from 'react-router-dom';
 // import { useNavigate } from 'react-router-dom';
 
 function FinishExam() {
@@ -24,7 +25,9 @@ function FinishExam() {
   return (
     <div className='text-center'>
       <ExamHeader />
-      <b>FinishExam.</b>
+      <p><b>FinishExam.</b></p>
+      <br/>
+      <Link to={`/ExamResult`}><button className="btn btn-success">ExamResult</button></Link>
     </div>
   );
 } 

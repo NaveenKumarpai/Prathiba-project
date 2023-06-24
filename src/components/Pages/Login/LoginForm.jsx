@@ -24,7 +24,7 @@ const LoginForm = ( { setId, setTokenu}) => {
 
       const data = response.data;
       
-      // console.log(data);
+      console.log(data);
       setId(data.data.Id); 
       setTokenu(data.data.Token);
       setMessage(data.data.Message);

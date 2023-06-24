@@ -23,7 +23,7 @@ const FreeExamList = ({ server_key, tokenu, id }) => {
           }
         );
 
-        // console.log(response.data);
+        console.log(response.data);
         setExams(response.data.data.exams);
         // console.log(tokenu);
         // console.log(id);
@@ -32,19 +32,8 @@ const FreeExamList = ({ server_key, tokenu, id }) => {
         console.error(error);
       }  
     };
-    function backArrow() {
-      window.addEventListener('popstate', showAlert);
-      window.history.forward();
-    }
-  
-    function showAlert() {
-      alert("Logout")
-      window.history.go(0)
-      window.location.href="/";
-    }
 
     fetchExams();
-    backArrow();
   }, [id, server_key, tokenu]);
 
   if (!Array.isArray(exams)) {

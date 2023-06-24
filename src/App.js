@@ -8,6 +8,13 @@ import Questions from './components/Pages/StartExam/Questions';
 import { useState } from 'react';
 import FinishExam from './components/Pages/FinishExam/FinishExam';
 import PageNotFound from './components/Pages/PageNotFound/PageNotFound';
+import MyResults from "./components/Pages/MyResults/MyResults";
+import ExamResult from "./components/Pages/ExamResult/ExamResult";
+import PackageDetails from './components/Pages/PackageDetails/PackageDetails';
+import PaymentResponse from './components/Pages/PaymentResponse/PaymentResponse';
+import Transcations from './components/Pages/Transcations/Transcations';
+
+
 
 function App() {
   
@@ -27,7 +34,13 @@ function App() {
       <Route path="/ExamPage"element={<FreeExamList id={id} tokenu={tokenu} server_key={serverKey} />}/>
       <Route path="/Questions/:examId" element={<Questions id={id} tokenu={tokenu} server_key={serverKey} />}/>
       <Route path="/FinishExam" element={<FinishExam />}/>
+      <Route path="/MyResults" element={<MyResults id={id} tokenu={tokenu} server_key={serverKey}/>}/>
+      <Route path="/ExamResult" element={<ExamResult id={id} tokenu={tokenu} server_key={serverKey}/>}/>
+      <Route path="/PackageDetails" element={<PackageDetails id={id} tokenu={tokenu} server_key={serverKey}/>}/>
+      <Route path="/PaymentResponse" element={<PaymentResponse/>}/>
+      <Route path="/Transcations" element={<Transcations id={id} tokenu={tokenu} server_key={serverKey}/>}/>
       <Route path="*" element={<PageNotFound/>} />
+
       
     
 
