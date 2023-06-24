@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Prathiba-project/static/css/main.b557d573.css",
-    "main.js": "/Prathiba-project/static/js/main.c4f99da9.js",
+    "main.css": "/Prathiba-project/static/css/main.72e5915c.css",
+    "main.js": "/Prathiba-project/static/js/main.eeaa94f6.js",
     "static/media/image.jpg": "/Prathiba-project/static/media/image.93d63aa7b180f20bfe3a.jpg",
     "static/media/Logo.jpg": "/Prathiba-project/static/media/Logo.a766a7036669052e647d.jpg",
     "index.html": "/Prathiba-project/index.html",
-    "main.b557d573.css.map": "/Prathiba-project/static/css/main.b557d573.css.map",
-    "main.c4f99da9.js.map": "/Prathiba-project/static/js/main.c4f99da9.js.map"
+    "main.72e5915c.css.map": "/Prathiba-project/static/css/main.72e5915c.css.map",
+    "main.eeaa94f6.js.map": "/Prathiba-project/static/js/main.eeaa94f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.b557d573.css",
-    "static/js/main.c4f99da9.js"
+    "static/css/main.72e5915c.css",
+    "static/js/main.eeaa94f6.js"
   ]
 }
